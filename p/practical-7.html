@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-7</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #container{
+            border: 10px solid rgb(221, 215, 215);
+            padding:10px;
+
+        }
+        .section:after{
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+        #header{
+            background-color: grey;
+            height:65px;
+            margin-bottom: 10px;
+            color:white;
+            font-size: 25px;
+            display:flex;
+            justify-content:center ;
+            align-items: center;
+        }
+        #banner{
+            background-color: rgb(143, 200, 238);
+            height:550px;
+            margin-bottom: 10px;
+            color:white;
+            font-size: 25px;
+            display:flex;
+            justify-content:center ;
+            align-items: center;
+        }
+        h2{
+            text-align: center;
+        }
+        .section{
+            width:100%;
+            margin-bottom: 10px;
+            /* border: 1px solid black;  */
+            
+        }
+        
+        .circle{
+            height:275px;
+            width:275px;
+            background-color:darkgoldenrod;
+            border-radius: 50%;
+            float: left;
+            margin-left:82px;
+            margin-top: 10px;
+            
+            
+        }
+        #leftside{
+            width:49%;
+            height:500px;
+            background-color: grey;
+            color:white;
+            font-size: 25px;
+            display:flex;
+            justify-content:center ;
+            align-items: center;
+            float: left;
+            margin-top: 10px;
+        }
+        #rightside{
+            width:49%;
+            height:500px;
+            float: right;
+            margin-top: 10px;
+        }
+        .article{
+            width:100%;
+            height:31%;
+            background-color: chocolate;
+            margin-bottom: 17px;
+            color:white;
+            font-size: 25px;
+            display:flex;
+            justify-content:center ;
+            align-items: center;
+        }
+        .card{
+            height:300px;
+            width:250px;
+            background-color:orangered;
+            float: left;
+            margin-top: 10px;
+            margin-left:98px;
+        }
+        #footer{
+            background-color: rgb(233, 141, 225);
+            height:65px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color:white;
+            font-size: 25px;
+            display:flex;
+            justify-content:center ;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <div id="header">Header</div>
+    <div id="banner">Banner</div>
+    <h2>Section-1</h2>
+    <div class="section">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    
+    <div class="section">
+        <h2>Section-2</h2>
+        <div id="leftside">Main Content</div>
+        <div id="rightside">
+            <div class="article">Article-1</div>
+            <div class="article">Article-2</div>
+            <div class="article">Article-3</div>
+            
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Section-3</h2>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+    
+    <div class="section">
+        <h2>Section-4</h2>
+        <div id="footer">Footer</div>
+    </div>
+</div>
+</body>
+</html>
