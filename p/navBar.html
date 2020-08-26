@@ -1,54 +1,131 @@
 <!DOCTYPE html>
 <html>
-
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <head>
   <style>
     * {
+      padding: 0px;
+      margin: 0px;
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 12px;
+      box-sizing: border-box;
+    }
+    body{
+      background-image: url('../img/Laptop.jpg');
+      background-size: cover;
     }
 
-    #navbar {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #EEEEEE;
+    .header {
+      width: 100%;
+      height: 70px;
+      padding: 0 20px;
+      background-color: lightgrey;
     }
-
-    ul#navbar li {
-      float: left;
-    }
-
-    ul#navbar li a {
-      display: block;
-      color: #000000;
-      font-weight: bold;
-      padding: 8px 16px;
-      text-decoration: none;
-    }
-
-
-    ul#navbar li a:hover {
-      background-color: orange;
+    .header h2{
       color: white;
+      line-height: 70px;
+      float: left;
+      text-transform: uppercase;
+    }
+
+    .header .navbar{
+      float: right;
+      list-style-type: none;
+    }
+
+    .navbar li{
+      display: inline-block;
+      line-height: 70px;
+    }
+    .navbar li a {
+      color:white;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding:  0px 20px;
+      transition: .4s;
+    }
+
+
+    .navbar li a:hover, .show-btn:hover, .hide-btn:hover{
+      color: skyblue;
+    }
+    .show-btn, .hide-btn{
+        font-size: 30px;
+        color: white;
+        line-height:70px;
+        transition: .4s;
+        display: none;
+    }
+    .show-btn{
+      float: right;
+    }
+    #chk
+    {
+      position: absolute;
+      visibility: hidden;
+      z-index: -10;
+    }
+    @media(max-width: 900px){
+      .show-btn, .hide-btn{
+          display: block;
+      }
+      .navbar{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        text-align: center;
+        padding: 80px 0;
+        transition: .7s;
+        line-height: normal;
+
+      }
+      #chk:checked ~.navbar{
+        right: 0;
+      }
+      .navbar li{
+        display: block;
+        padding: 20px 0;
+      }
+      .navbar li a{
+        display: block;
+        
+      }
+      .hide-btn{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <h3>Horizontal Navigation Bar</h3>
-  <hr />
-
-  <ul id="navbar">
+  <div class="header">
+  <h2>Menu Bar</h2>
+  <input type="checkbox" id="chk">
+  <label for="chk" class="show-btn">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </label>
+  <ul class="navbar">
     <li><a href="/tests">Tests</a></li>
     <li><a href="/studyroom">Q & A Forum</a></li>
     <li><a href="/flashcards">Interview QnA</a></li>
     <li><a href="/library">Tutorials</a></li>
     <li><a href="/testimonials">Testimonials</a></li>
+    <label for="chk" class="hide-btn">
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </label>
   </ul>
-
+ 
+</div>
 </body>
 
 </html>
