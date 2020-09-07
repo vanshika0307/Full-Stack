@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-12</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            margin: 50px auto;
+            background-color: white;
+            text-align: center;
+            border-collapse: collapse;
+            border: 10px solid white;
+        }
+        .heading td{
+            padding: 20px;
+        }
+        th,tr, td{
+            border-right: 2px solid white;
+            padding: 10px 30px;
+        }
+        th{
+            font-size: 20px;
+        }
+        .heading{
+            color: darkblue;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .price{
+            color: green;
+            font-size: 20px;
+        }
+        th{
+            background-color: white;
+        }
+        tr:nth-child(odd){
+            background-color: rgb(242, 253, 226);
+        }
+        .basic{
+            background-color: #d5e4bc;
+        }
+        .plus{
+            background-color: #c1dcb7;
+        }
+        .deluxe{
+            background-color: #bad6c8;    
+        }
+        .pro{
+            background-color: #bbd3dc;    
+        }
+        .check {
+            font-size: 20px;
+            color: rgb(18, 180, 18);
+        }
+        .times{
+            font-size: 20px;
+            color: red;
+        }
+        .button td{
+           padding: 20px;
+        }
+        a{
+            font-size: 17px;
+            text-decoration: none;
+            color: white;
+            background-color: purple;
+            padding:15px 30px;
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup class="basic"></colgroup>
+        <colgroup class="plus"></colgroup>
+        <colgroup class="deluxe"></colgroup>
+        <colgroup class="pro"></colgroup>
+        <tr>
+            <th colspan="4">SELECT YOUR PLAN</th>
+        </tr>
+        <tr class="heading">
+            <td>
+                <i class="fa fa-building" aria-hidden="true"></i>
+                Basic
+            </td>
+            <td>
+                <i class="fa fa-superpowers" aria-hidden="true"></i>
+                Plus
+            </td>
+            <td>
+                <i class="fa fa-telegram" aria-hidden="true"></i>
+                Deluxe
+            </th>
+            <td>
+                <i class="fa fa-tachometer" aria-hidden="true"></i>
+                Pro
+            </td>
+        </tr>
+        <tr class="price">
+            <td>Rs. 500/-</td>
+            <td>Rs. 1500/-</td>
+            <td>Rs. 2500/-</td>
+            <td>Rs. 3500/-</td>
+        </tr>
+        <tr>
+            <td>50 Pages</td>
+            <td>75 Pages</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td>3 users</td>
+            <td>5 users</td>
+            <td>10 users</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td>10 Sites</td>
+            <td>25 Sites</td>
+            <td>100 Sites</td>
+            <td>Unlimited Sites</td>
+        </tr>
+        <tr>
+            <td>50 MB</td>
+            <td>250 MB</td>
+            <td>1 GB</td>
+            <td>5 GB</td>
+        </tr>
+        <tr>
+            <td>included</td>
+            <td>included</td>
+            <td>included</td>
+            <td>included</td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-check check" aria-hidden="true"></i></td>
+            <td><i class="fa fa-check check" aria-hidden="true"></i></td>
+            <td><i class="fa fa-check check" aria-hidden="true"></i></td>
+            <td><i class="fa fa-check check" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-times times" aria-hidden="true"></i></td>
+            <td><i class="fa fa-check check" aria-hidden="true"></i></td>
+            <td><i class="fa fa-check check" aria-hidden="true"></i></td>
+            <td><i class="fa fa-check check" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-times times" aria-hidden="true"></i></td>
+            <td><i class="fa fa-check check" aria-hidden="true"></i></td>
+            <td><i class="fa fa-check check" aria-hidden="true"></i></td>
+            <td><i class="fa fa-check check" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-times times" aria-hidden="true"></i></td>
+            <td><i class="fa fa-times times" aria-hidden="true"></i></td>
+            <td><i class="fa fa-check check" aria-hidden="true"></i></td>
+            <td><i class="fa fa-check check" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-times times" aria-hidden="true"></i></td>
+            <td><i class="fa fa-times times" aria-hidden="true"></i></td>
+            <td><i class="fa fa-times times" aria-hidden="true"></i></td>
+            <td><i class="fa fa-check check" aria-hidden="true"></i></td>
+        </tr>
+        <tr class="button">
+            <td><a href="#">Sign Up</a></td>
+            <td><a href="#">Sign Up</a></td>
+            <td><a href="#">Sign Up</a></td>
+            <td><a href="#">Sign Up</a></td>
+        </tr>
+    </table>
+</body>
+</html>
