@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:nth-child(even)
+        {
+        color:red;
+        }
+        p:empty
+        {
+        width:100px;
+        height:20px;
+        background-color:red;
+        }
+        p:only-child
+        {
+        color:green;
+        }
+        div p:first-of-type::first-letter
+        {
+        text-transform:uppercase;
+        }
+        div p:last-child::before
+        {
+        font-family: 'Font-Awesome';
+        content: '\f058';
+        margin-right:5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>this is para.</p>
+        <p></p>
+        <p>This is para.</p>
+        <p>This is para.</p>
+        <div>
+            <p>This is para.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
