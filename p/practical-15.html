@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-15</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin-top: 50px;
+            text-align: center;
+            background-color: aquamarine;
+        }
+        h1{
+            margin-bottom: 50px;
+            color: brown;
+            font-size: 40px;
+        }
+        button{
+            width: 50px;
+            height: 50px;
+            font-size: 25px;
+            background-color: yellow;
+        }
+        p{
+            display: inline;
+            margin-left: 50px;
+            margin-right: 50px;
+            font-size: 30px;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <h1>COUNTER</h1>
+    
+        <button id= "dec" onclick="decrement()" disabled>-</button>
+        <p id="count"></p>
+        <button id="inc" onclick="increment()">+</button>
+  
+        <script>
+            var x = 0;
+            document.getElementById("count").innerHTML = x;
+            function btn(){
+                if(x==0){
+                    document.getElementById("dec").disabled=true;
+                }else{
+                    document.getElementById("dec").disabled=false;
+                }
+            }
+            function increment(){
+                x+=1;
+                document.getElementById("count").innerHTML = x;
+                btn();
+            }
+            function decrement(){
+                x-=1;
+                document.getElementById("count").innerHTML = x;
+                btn();
+            }
+            
+            
+        </script>
+</body>
+</html>
