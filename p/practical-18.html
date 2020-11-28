@@ -182,7 +182,7 @@
                 showError(username,'Username can not be blank');
             }
             else if(!isUsernmeValid(usernameValue)){
-                showError(username,'Username should at least have 5 characters');
+                showError(username,'Username is not valid');
             }
             else{
                 showSuccess(username);
@@ -200,9 +200,6 @@
 
             if(password1Value === ''){
                 showError(password1,'Password can not be blank');
-            }
-            else if(!isPasswordValid(password1Value)){
-                showError(password1,'Password should at least have 8 characters');
             }
             else{
                 showSuccess(password1);
@@ -236,16 +233,13 @@
        }
 
        function isUsernmeValid(usernameValue){
-        return (/^([a-zA-Z0-9_\.@\-]+){5}$/.test(usernameValue));
+        return (/^([a-z]+)$/.test(usernameValue));
        }
 
        function isEmailValid(email){
            return (/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9]+)\.([a-zA-Z]{2,3})$/.test(email));
        }
 
-       function isPasswordValid(passwordValue){
-        return (/^([a-zA-Z0-9_\.@\-]+){5}$/.test(passwordValue));
-       }
 
     </script>
 
