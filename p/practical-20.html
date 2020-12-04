@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
     <title>Practical-20</title>
     <style>
         body{
@@ -11,51 +12,57 @@
         }
         .header{
             min-height: 90px;
-            background-color: lightskyblue;
             margin-top: 30px;
         }
         .leftside{
             min-height: 310px;
-            background-color: yellow;
             margin-top: 30px;
         }
         .rightside1{
             min-height: 140px;
-            background-color: lightseagreen;
             margin-top: 30px;
         }
         .rightside2{
             min-height: 140px;
-            background-color: crimson;
             margin-top: 30px;
         }
         .footer{
             min-height: 75px;
-            background-color: rgb(10, 19, 61);
             margin-top: 30px;
         }
 
     </style>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="header bg-info"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="leftside bg-warning"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="rightside1 bg-primary"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="rightside2 bg-danger"></div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-sm-12">
-                <div class="header"></div>
+                <div class="footer bg-dark"></div>
             </div>
-            <div class="col-sm-8">
-                <div class="leftside"></div>
-            </div>
-            <div class="col-sm-4">
-                <div class="rightside1"></div>
-            </div>
-            <div class="col-sm-4">
-                <div class="rightside2"></div>
-            </div>
-
-            <div class="col-sm-12">
-                <div class="footer"></div>
-            </div>
+        </div>
         </div>
     </div>
     
